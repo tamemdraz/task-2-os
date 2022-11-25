@@ -1,1 +1,19 @@
+on:
+  push:
+    branches:
+      -last
 
+
+
+
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: 'Testing Github action'
+        run: pwd
+
+      - name: 'Testing print'
+        run: echo Tamem
